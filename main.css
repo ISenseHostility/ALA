@@ -1,0 +1,489 @@
+:root{
+    --site-color-01: #c13584;
+    --site-color-01-hover: #9e2f6e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(199, 199, 199);
+    margin: 0;
+    padding: 0;
+}
+
+body:after{
+    content: url(../img/avatar-white.png) url(../img/winkelmand-white.png) url(../img/logo.png);
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wrapper-main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 26px;
+    line-height: 32px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 26px;
+    line-height: 32px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 3px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* navbar section */
+
+.header-main{
+    width: 100%;
+    height: 60px;
+    background-color: #ff7a00;
+    opacity: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo{
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+}
+
+.logo img{
+    height: 40px;
+    align-self: center;
+    padding-right: 60px;
+}
+
+.navbar{
+    width: fit-content;
+    height: 100%;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline;
+    float: left;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    color: #000;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover{
+    color: var(--site-color-01-hover);
+}
+
+.winkelmand{
+    width: fit-content;
+    height: 100%;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.winkelmand-icon{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/winkelmand-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winkelmand-icon:hover{
+    background-image: url(../img/winkelmand-black.png);
+}
+
+.winkelmand-avatar{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/avatar-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winkelmand-avatar:hover{
+    background-image: url(../img/avatar-black.png);
+}
+
+/* FOOTER */
+
+.footer-main{
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background-color: rgba(255, 122, 0, 0.8);
+}
+
+.footer-main-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-werknemer{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-werknemer p{
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 20px 0;
+}
+
+.contact-button{
+    padding: 10px 20px;
+    margin: 40px 0 60px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    transition: all ease-in-out 200ms;
+}
+
+.contact-button:hover{
+    border: 2px solid var(--site-color-01-hover);
+    color: var(--site-color-01-hover);
+}
+
+.footer-sitemap{
+    flex-basis: 100%;
+    display: flex;
+}
+
+.footer-sitemap a{
+    line-height: 30px;
+
+}
+
+.footer-sitemap a:hover{
+    color: var(--site-color-01-hover);
+}
+
+.footer-sitemap ul:nth-child(1){
+    border-left: 2px solid white;
+    padding: 20px;
+}
+
+.footer-sitemap ul:nth-child(1), 
+.footer-sitemap ul:nth-child(2){
+    flex-basis: 180px;
+}
+
+.footer-sitemap ul:nth-child(3){
+    flex-basis: 340px;
+}
+
+.footer-sitemap ul:nth-child(4){
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) li{
+    clear: both;
+    float: right;
+}
+
+.footer-sitemap p{
+    text-transform: uppercase;
+}
+
+.footer-main ul{
+    list-style: none;
+}
+
+
+.footer-werknemer img{
+    width: 50%;
+    border-radius: 100px;
+    border: 2px solid white
+}
+
+/* Hero section */
+
+.main-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    background-image: url(../img/hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 0 ;
+    border-radius: 10px;
+    background-color: rgba(255, 122, 0, 0.50);
+    padding: 60px;
+}
+
+.main-intro h1,
+.main-intro p,
+.main-intro a {
+    text-align: center;
+}
+
+.main-intro h1{
+    color: white;
+    margin: 20px;
+}
+
+.main-intro p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-intro a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+.main-intro a{
+    font-size: 18px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ff7a00;
+    padding: 0 20px;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.main-intro a:hover{
+    background-color: var(--site-color-01-hover);
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+/* section  */
+
+.catogorie{
+    width: 100%;
+    padding: 60px 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.catogorie h1{
+    color: black   ;
+    text-align: center;
+    padding-bottom: 50px;
+    flex-basis: 100%;
+}
+
+.catogorie-box{
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-shadow: 1px 2px 4px #ff7a00;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.catogorie-box:hover .dark-overlay{
+    opacity: 0;
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 50%;
+    border-radius: 10px;
+    transition: all ease-in-out 200ms;
+}
+
+.catogorie-box h3{
+    font-size: 22px;
+    line-height: 28px;
+    color: white;
+    z-index: 100;
+}
+
+.catogorie-box:nth-child(2){
+    background-image: url(../img/PCs.jpg);
+}
+
+.catogorie-box:nth-child(3){
+    background-image: url(../img/Keyboards.jpg);
+}
+
+.catogorie-box:nth-child(4){
+    background-image: url(../img/Mouses.jpg);
+}
+
+.catogorie-box:nth-child(5){
+    background-image: url(../img/Monitors.jpg);
+}
+
+/* About us section */
+
+.about{
+    width: 100%;
+    padding: 60px 0;
+    background-color: darkslategrey;
+}
+
+.about-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.about-image img{
+    width: 250px;
+    border-radius: 250px;
+    border: 2px solid white;
+}
+
+.about-text{
+    flex-basis: 400px;
+}
+
+.about-text h2{
+    color: white;
+}
+
+.about-text p{
+    padding: 20px 0;
+    color: white;
+}
+
+.about-text a{
+    font-size: 18px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ff7a00;
+    color: white;
+    padding: 0 20px;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-text a:hover{
+    background-color: var(--site-color-01-hover);
+}
+
+.about-service{
+    flex-basis: 350px;
+}
+
+.about-service p{
+    color: white;
+}
+
+.about-service-bar{
+    width: 100%;
+    height: 15px;
+    border: 2px solid white;
+}
+
+.about-service-bar-fill{
+    height: 100%;
+    background-color: #ff7a00;
+}
+
+.repair{
+    width: 95%;
+}
+.repair2{
+    width: 80%;
+}
+
+.repair3{
+    width: 50%;
+}
+
+.repair4{
+    width: 70%;
+}
+
+.repair5{
+    width: 90%;
+}
+
+.repair6{
+    width: 60%;
+}
